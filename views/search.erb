@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <h1>form action 방식</h1>
+        <form action='https://m.search.naver.com/search.naver'>
+            <input type="text" name="query">
+            <input type="submit" name="submit" value="네이버검색">
+        </form>
+        <form action='https://www.google.co.kr/search'>
+            <input type="text" name="q">
+            <input type="submit" name="submit" value="구글검색">
+        </form>
+        <h1>method post 방식</h1>
+        <form method="POST">
+            <input type="hidden" name="engine" value="naver">
+            <input type="text" name="query">
+            <input type="submit" name="submit" value="네이버검색">
+        </form>
+        <form method="POST">
+            <input type="hidden" name="engine" value="googler">
+            <input type="text" name="query">
+            <input type="submit" name="submit" value="구글검색">
+        </form>
+    </body>
+</html>

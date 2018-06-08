@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h1>FAKE OP.GG</h1>
+        <form>
+            <h3>소환사 검색</h3>
+            <select name="search_method" required="true">
+                <option value="opgg">OP.GG에서 보기</option>
+                <option value="self">승패수만 보기</option>
+            </select>
+            <input type="text" name="userName" required="true">
+            <input type="submit" name="submit" value="검색">
+        </form>
+    </body>
+    <%if params[:userName]%>
+    <ul>
+        <li><%=params[:userName]%>님의 전적입니다.</li>
+        <li><%=@win%>승</li>
+        <li><%=@lose%>패</li>
+    </ul>
+    <%end%>
+</html>
